@@ -1,0 +1,10 @@
+<% include ./partials/header %>
+<h1>HOME</h1>
+<p> <%= kar %> </p>
+<% for(var i=0;i<we.length;i++){ %>
+ <p><h1><%= we[i].title %></h1></p>
+ 
+   <a href="/posts/<%=we[i]._id%>">Read More</a>
+ </p>
+<% } %>
+<% include ./partials/footer %>
